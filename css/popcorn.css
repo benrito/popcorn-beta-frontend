@@ -43,6 +43,7 @@ footer,
 header,
 hgroup,
 nav,
+nav2,
 section {
   display: block;
 }
@@ -477,8 +478,6 @@ dd {
 hr {
   margin: 18px 0;
   border: 0;
-  border-top: 1px solid #eeeeee;
-  border-bottom: 1px solid #ffffff;
 }
 strong {
   font-weight: bold;
@@ -1628,7 +1627,7 @@ legend + .control-group {
 }
 .btn-larger {
   padding: 11px 75px;
-  font-size: 25px;
+  font-size: 20px;
   line-height: normal;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
@@ -2496,6 +2495,17 @@ input[type="submit"].btn.btn-mini {
   display: block;
   border-left: 1px solid rgb(205, 186, 115);
 }
+.nav2 {
+  margin-left: 0;
+  margin-bottom: 18px;
+  list-style: none;
+  font-size: 15px;
+}
+.nav2 > li > a {
+  color: black;
+  display: block;
+  border-left: 1px solid rgb(205, 186, 115);
+}
 .nav > li > a:hover {
   text-decoration: none;
   background-color: #eeeeee;
@@ -2505,6 +2515,10 @@ input[type="submit"].btn.btn-mini {
   background-image: -webkit-linear-gradient(bottom, rgba(255,255,255,0) 0%, rgb(250,242,217) 100%);
   background-image: -ms-linear-gradient(bottom, rgba(255,255,255,0) 0%, rgb(250,242,217) 100%);
   background-image: -webkit-gradient(linear,left bottom,left top,color-stop(0, rgba(255,255,255,0)),color-stop(1, rgb(250,242,217)));
+}
+.nav2 > li > a:hover {
+	text-decoration: none;
+	background-color: #EEE;
 }
 .nav > .pull-right {
   float: right;
@@ -2519,7 +2533,20 @@ input[type="submit"].btn.btn-mini {
   text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
   text-transform: uppercase;
 }
+.nav2 .nav-header {
+  display: block;
+  padding: 3px 5px 5px 5px;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 18px;
+  color: #999999;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+  text-transform: uppercase;
+}
 .nav li + .nav-header {
+  margin-top: 9px;
+}
+.nav2 li + .nav-header {
   margin-top: 9px;
 }
 .nav-list {
@@ -2572,6 +2599,7 @@ input[type="submit"].btn.btn-mini {
 .nav-tabs > li,
 .nav-pills > li {
   float: left;
+  font-size: 15px;
 }
 .nav-tabs > li > a,
 .nav-pills > li > a {
@@ -2601,7 +2629,7 @@ input[type="submit"].btn.btn-mini {
 .nav-tabs > .active > a,
 .nav-tabs > .active > a:hover {
   color: #555555;
-  background-color: #ffffff;
+  background-color: #DDD;
   border: 1px solid #ddd;
   border-bottom-color: transparent;
   cursor: default;
@@ -3544,7 +3572,7 @@ a.thumbnail:hover {
   background-image: linear-gradient(-45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
 }
 .hero-unit {
-  padding-left: 60px;
+  padding-left: 30px;
   padding-top: 15px;
   margin-bottom: 50px;
   -webkit-border-radius: 6px;
@@ -3553,7 +3581,7 @@ a.thumbnail:hover {
 }
 .hero-unit h1 {
   margin-bottom: 0;
-  font-size: 50px;
+  font-size: 40px;
   line-height: 1;
   color: inherit;
   letter-spacing: -1px;
@@ -4960,4 +4988,20 @@ display: inline;
 }
 .project-desc {
 color: #444;
+}
+.template-detail {
+padding-left: 10px;
+}
+.enforced-font {
+font-size: 13px !important;
+line-height: 19px !important;
+}
+.pull-down {
+padding-top: 100px;
+}
+.center {
+margin: 0px auto;
+}
+.textcenter {
+text-align: center;
 }
