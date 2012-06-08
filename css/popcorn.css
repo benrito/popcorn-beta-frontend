@@ -327,6 +327,7 @@ a:hover {
   clear: both;
 }
 .container-fluid {
+  min-width: 1075px;
   padding-right: 20px;
   padding-left: 20px;
   *zoom: 1;
@@ -4350,7 +4351,6 @@ button.close {
 }
 @media (min-width: 768px) and (max-width: 979px) {
   .row {
-    margin-left: -20px;
     *zoom: 1;
   }
   .row:before,
@@ -5010,4 +5010,10 @@ padding-top: 25px;
 }
 .titlepush {
 padding-left: 50px;
+}
+.hello-unit {
+background-color:white;
+}
+.no-padding-right {
+padding-right: 0px !important;
 }
