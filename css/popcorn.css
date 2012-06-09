@@ -4110,7 +4110,7 @@ a.thumbnail:hover {
   margin-bottom: 20px;
   background-color: #fff;
   border: 1px solid #eee;
-  border: 1px solid rgba(0, 0, 0, 0.05);
+  border: 1px solid rgba(0, 0, 0, 0.15);
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   border-radius: 4px;
