@@ -70,7 +70,7 @@ Help</a></li>
 	</div>
 	</div>	
 	<div class="span6 toppad">
-	<h2>Introduction</h2>
+	<h2>Web Native Planning</h2>
 	<a class="btn pull-right" href="docs/popcorn_teacher_guide.pdf"><i class="icon-download-alt"></i>Get teachers' guide [PDF]</a>
     </div>    
 </div>
@@ -84,9 +84,9 @@ Help</a></li>
 
 <div class="SC_cinema_left">
         <ul class="navList">
-          <li class="active-chapter">
+          <li>
             <h1>Introduction</h1>
-            <a href="#"> <img src="img/story/chapter01.png"> </a></li>
+            <a href="cinema.html"> <img src="img/story/chapter01.png"> </a></li>
           <li>
             <h1>History of Media</h1>
             <a href="cinema2.html"> <img src="img/story/chapter02.png"></a></li>
@@ -99,9 +99,9 @@ Help</a></li>
           <li>
             <h1>Web Native Storytelling</h1>
             <a href="cinema5.html"> <img src="img/story/chapter05.png"></a></li>
-          <li>
+          <li class="active-chapter">
             <h1>Web Native Planning</h1>
-            <a href="cinema6.html"> <img src="img/story/chapter06.png"></a></li>
+            <a href="#"> <img src="img/story/chapter06.png"></a></li>
         </ul>
 </div>
 
@@ -114,10 +114,10 @@ Help</a></li>
 
 <div id="video-container">
 <video id="my_video_1" class="video-js vjs-default-skin" controls
-  preload="auto" width="768" height="480" poster="img/story/episode1.jpg"
+  preload="auto" width="768" height="480" poster="img/story/episode6.jpg"
   data-setup="{}">
-  <source src="http://videos-origin.mozilla.org/serv/webmademovies/storycamp/storycamp_episode1.mp4" type='video/mp4'>
-  <source src="http://videos-origin.mozilla.org/serv/webmademovies/storycamp/storycamp_episode1.webm" type='video/webm'>
+  <source src="http://videos-origin.mozilla.org/serv/webmademovies/storycamp/storycamp_episode6.mp4" type='video/mp4'>
+  <source src="http://videos-origin.mozilla.org/serv/webmademovies/storycamp/storycamp_episode6.webm" type='video/webm'>
 </video>
 <div id="pop-container"></div>
 </div>
@@ -196,36 +196,67 @@ Help</a></li>
 <script type="text/javascript">(function(){
 var popcorn = Popcorn( '#my_video_1_html5_api');
 popcorn.pop({
-  "start": 15.06,
-  "end": 18.990000000000002,
-  "text": "Learn about Mozilla Webmaker",
-  "link": "http://www.webmaker.org",
-  "top": "80%",
-  "left": "20%",
+  "start": 14.48,
+  "end": 18.29,
+  "text": "Visit The Living Docs Project, an initiative to encourage Web Native Documentary",
+  "link": "http://www.livingdocs.org",
+  "top": "50%",
+  "left": "58%",
   "target": "pop-container",
   "icon": "pop-images/net.png"
 });
 popcorn.pop({
-  "start": 56.94,
-  "end": 59.77,
-  "text": "Learn about the BAVC students experience",
-  "link": "http://www.bavc.org/web-native-filmmaking",
-  "top": "69%",
-  "left": "28%",
+  "start": 20.48,
+  "end": 24.67,
+  "text": "Check out Google's Chrome Experiments",
+  "link": "http://www.chromeexperiments.com/",
+  "top": "77%",
+  "left": "36%",
+  "target": "pop-container",
+  "icon": "pop-images/star.png"
+});
+popcorn.pop({
+  "start": 38.59,
+  "end": 42.5,
+  "text": "Learn about Storyboarding",
+  "link": "http://en.wikipedia.org/wiki/Storyboard",
+  "top": "72%",
+  "left": "80%",
   "target": "pop-container",
   "icon": "pop-images/info.png"
 });
 popcorn.pop({
-  "start": 63.88,
-  "end": 67.56,
-  "text": "Watch a video of their experience",
-  "link": "http://mozillapopcorn.org/bavc/",
-  "top": "72%",
-  "left": "43%",
+  "start": 74.21,
+  "end": 79.22,
+  "text": "Learn about the making of \"The Wilderness Downtown",
+  "link": "http://www.thefwa.com/article/the-making-of-the-wilderness-downtown",
+  "top": "70%",
+  "left": "0%",
   "target": "pop-container",
-  "icon": "pop-images/tv.png"
+  "icon": "pop-images/star.png"
 });
-return popcorn;
+popcorn.pop({
+  "start": 129.55,
+  "end": 133.89,
+  "text": "Watch \"Museum Of Me\"",
+  "link": "http://www.intel.com/museumofme/r/index.htm",
+  "top": "71%",
+  "left": "50%",
+  "target": "pop-container",
+  "icon": "pop-images/eye.png"
+});
+popcorn.pop({
+  "start": 136.92,
+  "end": 141.26,
+  "text": "Watch \"Creative Growth\" by students at BAVC",
+  "link": "http://bavc.org/sites/live/files/factory/creativegrowth/index.html",
+  "top": "79%",
+  "left": "50%",
+  "target": "pop-container",
+  "icon": "pop-images/eye.png"
+});
+
+ return popcorn;
 }());</script>
 </body>
 </html>
