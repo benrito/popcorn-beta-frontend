@@ -67,11 +67,11 @@ div.events{
 }
 .SC_logos {
 padding: 4px;
-line-height: 10;
+line-height: 8;
 }
 .SC_logos img{
 padding:5px;
-max-width: 125px;
+max-width: 100px;
 max-height: 100px;
 }
 
