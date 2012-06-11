@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Mozilla Popcorn: Video that Works Like the Web</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Le styles -->
+    <link href="css/layers.css" rel="stylesheet">
+    <link href="css/popcorn.css" rel="stylesheet">
+    <style type="text/css">
+      .sidebar-nav {
+        padding: 9px 0;
+      }
+    </style>
+    <link href="css/bootstrap-responsive.css" rel="stylesheet">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le fav and touch icons -->
+        <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+        <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+  </head>
+
+  <body>
+
+    <div class="navbar navbar-static-top">
+      <div class="navbar-inner">
+        <div class="container-fluid">
+          <a class="brand" href="index.html">
+          	<img src="img/logo.png" width="150px"> <span class="beta">beta 1</span>
+          </a><a href="index.html">
+          <div class="btn-group pull-right">
+            <a class="btn dropdown-toggle" data-toggle="dropdown" href="profile.html">
+              <i class="icon-user"></i> Username
+              <span class="caret"></span>
+            </a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Profile</a></li>
+              <li class="divider"></li>
+              <li><a href="#">Sign Out</a></li>
+            </ul>
+          </div>
+          <div>
+            <ul class="nav adjust">
+              <li><a href="about.html">About</a></li>
+              <li><a href="gallery.html">New Project</a></li>
+              <li><a href="projects.html">Made With Popcorn</a></li>
+              <li><a href="help.html">      <i class="icon-book"></i>
+Help</a></li>
+            </ul>
+            
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid">
+    
+    <div class="span12 well center">
+
+<div id="explainer-container">
+      <div id="popcorn" class="layer"></div>
+      <div id="butter" class="layer"></div>
+      <div id="template" class="layer"></div>
+      <div id="deck" class="layer"></div>
+
+      <div id="intro" class="description focusedtext">
+	
+	<h2>Contributing to Popcorn</h2>
+
+	<p><a href="http://mozillapopcorn.org">Mozilla Popcorn</a>, currently in alpha, enables anyone to make and share interactive web video. But even at this early stage, we welcome your help and contributions.</p>
+	
+	<p>Like Wordpress or Drupal, it's an open source project that grows with community contributions to both code and content.</p>
+	
+	<p>Here's a look at the pieces that make up Popcorn, and <a href="#" id="getstarted">how you can help.</a>
+      </div>
+
+      <div id="popcornDesc" class="description">
+	<h2>Develop a Popcorn plugin</h2>
+
+	<p>Plugins extend the functionality of Popcorn and Popcorn Maker. There are currently over 20 Popcorn plugins for all sorts of timed interactivity with media.</p>
+
+	<p>Plugins can be used by users from within the Popcorn Maker interface, and web developers can use them in white label projects.</p>
+
+	<p>When paired with specific Popcorn templates, custom plugins can offer sophisticated authoring capabilities to end-users.</p>
+	<h3>More</h3>
+	<ul>
+	  <li><a href="http://popcornjs.org/creating-plugins">How to create plugins</a> 
+	  </li>
+	  <li><a href="http://popcornjs.org/popcorn-docs/plugins/">Mozilla-supported plugins</a>
+	  </li>
+	  <li><a href="https://github.com/mozilla/popcorn-js">Contribute a plugin</a></li>
+	</ul>
+
+      </div>
+
+      <div id="templateDesc" class="description">
+	<h2>Make a template</h2>
+
+	<p>The easiest way to contribute to Popcorn is to design a template.</p>
+
+	<p>By following the conventions of the <strong>Butter API</strong>, you can easily make templates that people can use to author interactive video. Just design a page using regular HTML and CSS, then give the Popcorn-ready DOM elements some simple declarative attributes, like:</p>
+	
+	<code>
+	data-butter="media" / data-butter="target" 
+	</code>
+	
+	<p>Optionally, include <a href="http://popcornjs.org/creating-plugins">custom Popcorn.js plugins</a> and editor configurations. </p>
+
+	<p>Popcorn templates will help people make <a href="http://popcornjs.org/demos">all sorts of time-aligned media</a>, with point and click simplicity.</p>
+
+	<h3>More</h3>
+	<ul>
+	  <li><em>Quick guide to making templates - Coming soon</em></li>
+	  <li><a href="https://github.com/mozilla/butter/wiki">Butter API reference</a></li>
+	  <li><a href="https://github.com/mozilla/popcorn-templates">Contribute a template</a></li>
+	</ul>
+
+      </div>
+
+      <div id="butterDesc" class="description">
+	<h2>Test or work on Butter</h2>
+
+	<p>Butter is a software development kit to create HTML5 web apps that time user inputs with media. <strong>It's the foundation on which Popcorn Maker is built.</strong></p>
+	
+	<p>Butter manages track data, saved projects, saved media, user interface construction, publishing, and more.</p>
+	
+	<p>You are welcome to file a bug report, a feature request, or (even better) to contribute to the project!</p>
+	
+	<p>To contribute to Butter, join us at our <a href="https://webmademovies.lighthouseapp.com/projects/65733-butter/overview">Lighthouse issue tracker.</a> Have a look at the <a href="https://webmademovies.lighthouseapp.com/projects/65733-butter/tickets/bins/245656">open tickets</a> and feel free to take one. When you're done with a ticket, issue a pull request to the <a href="https://github.com/mozilla/butter">main repository</a> on GitHub.</p>
+
+	<h3>More</h3>
+	<ul>
+	  <li><a href="https://webmademovies.lighthouseapp.com/projects/65733-butter/milestones">
+	      Butter roadmap</a></li>
+	  <li><em>Make an app with Butter - coming soon</em></li>
+	</ul>
+
+      </div>
+
+    </div>
+    </div>
+
+	</div>
+	</div>
+      <hr>
+
+      <footer>
+  <div id="footer">
+            <div class="constrained">
+                <h2><img src="img/footer_logo.png" alt="Mozilla Webmaker" width="129" height="39" /></h2>
+                <div class="col">
+                    <h3>About</h3>
+                    <ul>
+                        <li><a href="#" About Us</a></li>
+                        <li><a href="mailto:joinmozilla@mozilla.org">Contact Us</a></li>
+                        <li><a href="http://www.mozilla.org/en-US/privacy-policy.html">Privacy Policy</a></li>
+                        <li><a href="http://www.mozilla.org/en-US/about/legal.html">Legal Notices</a></li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h3>Connect with Us</h3>
+                    <ul>
+                        <li><a href="http://twitter.com/mozilla/">Twitter</a></li>
+                        <li><a href="https://www.facebook.com/mozilla/">Facebook</a></li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h3>Make Something!</h3>
+                    <ul>
+                        <li><a href="{{ url('events') }}">Events</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+             </footer>
+
+    </div><!--/.fluid-container-->
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/jquery.js"></script>
+    <script src="js/layers.js"></script>
+
+  </body>
+</html>
